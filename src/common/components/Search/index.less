@@ -1,0 +1,45 @@
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .ant-form-item {
+    display: grid;
+    grid-template-columns: minmax(80px, max-content) auto;
+    margin-bottom: 0;
+
+    &:before {
+      display: none;
+    }
+
+    .ant-form-item-label {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+    }
+
+    .ant-form-item-control-wrapper {
+      height: 40px;
+      line-height: 40px;
+
+      .ant-calendar-picker,
+      .ant-select {
+        width: 100%;
+        min-width: 200px;
+      }
+    }
+  }
+
+  &__actions {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+    .button-group {
+      height: 40px;
+      line-height: 40px;
+      width: 140px;
+    }
+  }
+}
